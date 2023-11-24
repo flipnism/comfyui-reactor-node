@@ -289,7 +289,7 @@ class RestoreAndScale:
         upscale_model_name,
         scale_restore,
     ):
-        scale_then_restore = method
+        scale_then_restore = scale_restore
         pil_images = batch_tensor_to_pil(input_image)
         p = StableDiffusionProcessingImg2Img(pil_images)
         result = batched_pil_to_tensor(p.init_images)

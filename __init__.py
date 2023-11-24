@@ -40,3 +40,4 @@ for module in modules_to_remove:
 
 # Restore original modules
 sys.modules.update(original_webui_modules)
+WEB_DIRECTORY = "./web"
